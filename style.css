@@ -1,60 +1,111 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #2a2d30;
+    background-color: #1a1a1a;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #7289da;
+    color: #9d4edd;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 button {
-    background-color: #7289da;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background-color: #9d4edd;
+    color: #ffffff;
+    border: 2px solid #7b3cb5;
+    padding: 12px 24px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #5b6e9b;
+    background-color: #7b3cb5;
+    box-shadow: 0 0 15px rgba(157, 78, 221, 0.7);
+    transform: scale(1.05);
 }
 
 .navbar {
-    background-color: #23272a;
-    padding: 15px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px solid #9d4edd;
 }
 
 .navbar a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    color: #9d4edd;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #9d4edd;
+    transition: all 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(157, 78, 221, 0.3);
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #23272a;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    border-top: 3px solid #9d4edd;
+    margin-top: 40px;
 }
